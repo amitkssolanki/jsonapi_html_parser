@@ -7,19 +7,31 @@ There are two api calls available.
 ### Create Page
 Create a new page, accepts url variable as parameter:
 
-```curl -i -H "Accept: application/vnd.api+json" -H 'Content-Type:application/vnd.api+json' -X POST -d '{"data": {"type":"pages", "attributes":{"url":"https://www.assetuganda.org/"}}}' https://jsonapihtmlparser.herokuapp.com/pages```
+```
+bash
+curl -i -H "Accept: application/vnd.api+json" -H 'Content-Type:application/vnd.api+json' -X POST -d '{"data": {"type":"pages", "attributes":{"url":"https://www.assetuganda.org/"}}}' https://jsonapihtmlparser.herokuapp.com/pages
+```
 
 ### List Pages
 List all previous pages:
 
-```curl -i -H "Accept: application/vnd.api+json" "https://jsonapihtmlparser.herokuapp.com/pages"```
+```
+bash
+curl -i -H "Accept: application/vnd.api+json" "https://jsonapihtmlparser.herokuapp.com/pages"
+```
 
 There are other endpoints that can be used to get more details on other resources given below:
 
 ##  Link API
 ### List Links
-```curl -i -H "Accept: application/vnd.api+json" "https://jsonapihtmlparser.herokuapp.com/lists"```
+```
+bash
+curl -i -H "Accept: application/vnd.api+json" "https://jsonapihtmlparser.herokuapp.com/lists"
+```
 
 ##  Header Tag API
 ### List Header Tags
-```curl -i -H "Accept: application/vnd.api+json" "https://jsonapihtmlparser.herokuapp.com/header-tags"```
+```
+bash
+curl -i -H "Accept: application/vnd.api+json" "https://jsonapihtmlparser.herokuapp.com/header-tags"
+```
